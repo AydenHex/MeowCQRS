@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"cqrs/schema"
 	"encoding/gob"
+
 	"github.com/nats-io/go-nats"
 )
 
@@ -11,7 +12,7 @@ import (
 type NatsEventStore struct {
 	nc                      *nats.Conn
 	meowCreatedSubscription *nats.Subscription
-	meowCratedChan          chan MeowCreatedMessage
+	meowCreatedChan         chan MeowCreatedMessage
 }
 
 func NewNats(url string) (*NatsEventStore, error) {
@@ -29,7 +30,7 @@ func (e *NatsEventStore) Close() {
 	if e.meowCreatedSubscription != nil {
 		e.meowCreatedSubscription.Unsubscribe()
 	}
-	close(e.meowCratedChan)
+	close(e.meowCreatedChan)
 }
 
 func (mq *NatsEventStore) writeMessage(m Message) ([]byte, error) {

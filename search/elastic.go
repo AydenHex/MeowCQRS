@@ -4,8 +4,9 @@ import (
 	"context"
 	"cqrs/schema"
 	"encoding/json"
-	"github.com/olivere/elastic"
 	"log"
+
+	"github.com/olivere/elastic"
 )
 
 type ElasticRepository struct {

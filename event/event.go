@@ -1,8 +1,6 @@
 package event
 
-import (
-	"cqrs/schema"
-)
+import "cqrs/schema"
 
 type EventStore interface {
 	Close()

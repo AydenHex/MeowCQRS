@@ -2,8 +2,8 @@ package search
 
 import (
 	"context"
-	"cqrs/schema"
 	"encoding/json"
+	"github.com/AydenHex/MeowCQRS/schema"
 	"log"
 
 	"github.com/olivere/elastic"

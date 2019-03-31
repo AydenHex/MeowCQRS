@@ -1,6 +1,6 @@
 package event
 
-import "cqrs/schema"
+import "github.com/AydenHex/MeowCQRS/schema"
 
 type EventStore interface {
 	Close()

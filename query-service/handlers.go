@@ -2,11 +2,11 @@ package main
 
 import (
 	"context"
-	"cqrs/db"
-	"cqrs/event"
-	"cqrs/schema"
-	"cqrs/search"
-	"cqrs/util"
+	"github.com/AydenHex/MeowCQRS/db"
+	"github.com/AydenHex/MeowCQRS/event"
+	"github.com/AydenHex/MeowCQRS/schema"
+	"github.com/AydenHex/MeowCQRS/search"
+	"github.com/AydenHex/MeowCQRS/util"
 	"log"
 	"net/http"
 	"strconv"

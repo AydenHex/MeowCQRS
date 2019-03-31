@@ -1,10 +1,10 @@
 package main
 
 import (
-	"cqrs/db"
-	"cqrs/event"
-	"cqrs/search"
 	"fmt"
+	"github.com/AydenHex/MeowCQRS/db"
+	"github.com/AydenHex/MeowCQRS/event"
+	"github.com/AydenHex/MeowCQRS/search"
 	"github.com/gorilla/mux"
 	"github.com/kelseyhightower/envconfig"
 	"github.com/tinrab/retry"

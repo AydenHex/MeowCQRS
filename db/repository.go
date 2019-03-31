@@ -2,7 +2,7 @@ package db
 
 import (
 	"context"
-	"cqrs/schema"
+	"github.com/AydenHex/MeowCQRS/schema"
 )
 
 type Repository interface {

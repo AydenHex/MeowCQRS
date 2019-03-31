@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"encoding/gob"
 
-	"cqrs/schema"
+	"github.com/AydenHex/MeowCQRS/schema"
 	"github.com/nats-io/go-nats"
 )
 

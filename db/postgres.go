@@ -2,8 +2,8 @@ package db
 
 import (
 	"context"
-	"cqrs/schema"
 	"database/sql"
+	"github.com/AydenHex/MeowCQRS/schema"
 )
 
 type PostgresRepository struct {

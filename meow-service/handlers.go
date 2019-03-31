@@ -1,10 +1,10 @@
 package main
 
 import (
-	"cqrs/db"
-	"cqrs/event"
-	"cqrs/schema"
-	"cqrs/util"
+	"github.com/AydenHex/MeowCQRS/db"
+	"github.com/AydenHex/MeowCQRS/event"
+	"github.com/AydenHex/MeowCQRS/schema"
+	"github.com/AydenHex/MeowCQRS/util"
 	"github.com/segmentio/ksuid"
 	"html/template"
 	"log"

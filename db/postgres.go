@@ -5,7 +5,8 @@ import (
 	"database/sql"
 
 	"github.com/AydenHex/MeowCQRS/schema"
-	"github.com/lib/pq"
+	_ "github.com/lib/pq"
+	_ "github.com/mattes/migrate/source/file"
 )
 
 type PostgresRepository struct {

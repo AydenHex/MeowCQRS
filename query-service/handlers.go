@@ -2,14 +2,15 @@ package main
 
 import (
 	"context"
+	"log"
+	"net/http"
+	"strconv"
+
 	"github.com/AydenHex/MeowCQRS/db"
 	"github.com/AydenHex/MeowCQRS/event"
 	"github.com/AydenHex/MeowCQRS/schema"
 	"github.com/AydenHex/MeowCQRS/search"
 	"github.com/AydenHex/MeowCQRS/util"
-	"log"
-	"net/http"
-	"strconv"
 )
 
 func onMeowCreated(m event.MeowCreatedMessage) {

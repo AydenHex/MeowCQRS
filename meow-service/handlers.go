@@ -1,15 +1,16 @@
 package main
 
 import (
+	"html/template"
+	"log"
+	"net/http"
+	"time"
+
 	"github.com/AydenHex/MeowCQRS/db"
 	"github.com/AydenHex/MeowCQRS/event"
 	"github.com/AydenHex/MeowCQRS/schema"
 	"github.com/AydenHex/MeowCQRS/util"
 	"github.com/segmentio/ksuid"
-	"html/template"
-	"log"
-	"net/http"
-	"time"
 )
 
 func createMeowHandler(w http.ResponseWriter, r *http.Request) {

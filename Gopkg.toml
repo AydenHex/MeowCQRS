@@ -42,6 +42,10 @@
   version = "1.0.0"
 
 [[constraint]]
+  name = "github.com/mattes/migrate"
+  version = "3.0.1"
+
+[[constraint]]
   name = "github.com/nats-io/go-nats"
   version = "1.7.2"
 

@@ -5,7 +5,7 @@
   branch = "master"
   name = "github.com/AydenHex/MeowCQRS"
   packages = ["db","event","schema","search","util"]
-  revision = "554e314a5767061da1cdcafc9348a654d0bed614"
+  revision = "f351093bef55ee844a4005fd0a43866fba172d84"
 
 [[projects]]
   name = "github.com/gorilla/mux"
@@ -36,6 +36,12 @@
   name = "github.com/mailru/easyjson"
   packages = [".","buffer","jlexer","jwriter"]
   revision = "1ea4449da9834f4d333f1cc461c374aea217d249"
+
+[[projects]]
+  name = "github.com/mattes/migrate"
+  packages = ["source","source/file"]
+  revision = "035c07716cd373d88456ec4d701402df52584cb4"
+  version = "v3.0.1"
 
 [[projects]]
   name = "github.com/nats-io/go-nats"
@@ -88,6 +94,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "b82941fd4a8ed63c756e921dd47950ff9e585ecc449bfb7787a37cc2b301f3ae"
+  inputs-digest = "90d7bd2b06575c67de0c93529a02c5fb43f3361dedbb117e3cb55516486ebfff"
   solver-name = "gps-cdcl"
   solver-version = 1

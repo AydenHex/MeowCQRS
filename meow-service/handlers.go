@@ -49,7 +49,7 @@ func createMeowHandler(w http.ResponseWriter, r *http.Request) {
 
 	// Publish event
 	if err := event.PublishMeowCreated(meow); err != nil {
-		log.Println(err)
+		log.Println("publish: ", err)
 	}
 
 	// return new meow
